@@ -1,0 +1,30 @@
+[
+    {
+        "caption": "Ibira Theme: Edit Settings",
+        "command": "meetio_settings"
+    },
+    {
+        "caption": "Ibira Theme: Edit Settings (JSON)",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/Ibira Theme/Preferences.sublime-settings",
+            "default": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by syntax-specific settings.\n{\n\t$0\n}\n"
+        }
+    },
+    {
+        "caption": "Ibira Theme: Default Configuration",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/Ibira Theme/Ibira Theme.sublime-theme",
+            "default": "{\n\t\"variables\": {\n\t\t$0\n\t},\n\t\"rules\": []\n}\n"
+        }
+    },
+    {
+        "caption": "Ibira Theme: High Contrast Configuration",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/Ibira Theme/Ibira Theme High Contrast.sublime-theme",
+            "default": "{\n\t\"variables\": {\n\t\t$0\n\t},\n\t\"rules\": []\n}\n"
+        }
+    }
+]
