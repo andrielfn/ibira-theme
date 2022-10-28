@@ -20,10 +20,10 @@
     "orange": "#FFAD66",
     "pink": "#FF9CAC",
     "purple": "#DFBFFF",
-    "red": "#FF8080",
+    "red": "#ff6767",
     "violet": "#BB80B3",
     "white": "#FFFFFF",
-    "yellow": "#FFCB6B"
+    "yellow": "#ffc95a"
   },
   "globals": {
     "accent": "var(accent)",
@@ -107,8 +107,8 @@
     },
     {
       "name": "CONSTANT - Other language-specific constant symbols",
-      "scope": "constant.other.symbol",
-      "foreground": "var(green)"
+      "scope": "constant.other.symbol,constant.other.keyword",
+      "foreground": "var(pink)"
     },
     {
       "name": "CONSTANT - Other language-specific constant values",
@@ -193,7 +193,8 @@
     {
       "name": "ENTITY - HTML, CSS and XML",
       "scope": "entity.other.attribute-name",
-      "foreground": "var(yellow)"
+      "foreground": "var(yellow)",
+      "font_style": "italic"
     },
     {
       "name": "INVALID - Elements that are illegal in a specific context",
@@ -215,11 +216,11 @@
       "scope": "punctuation.definition.keyword",
       "foreground": "var(orange)"
     },
-    {
-      "name": "KEYWORD - All remaining non-operator keywords fall under the other",
-      "scope": "keyword.other",
-      "foreground": "var(orange)"
-    },
+    // {
+    //   "name": "KEYWORD - All remaining non-operator keywords fall under the other",
+    //   "scope": "keyword.other",
+    //   "foreground": "var(orange)"
+    // },
     {
       "name": "KEYWORD - Operators are typically symbols, so the term keyword can seem somewhat contradictory.",
       "scope": "keyword.operator,keyword.operator.arithmetic,keyword.operator.bitwise,keyword.operator.logical",
@@ -238,7 +239,7 @@
     {
       "name": "MARKUP - Section headings",
       "scope": "markup.heading",
-      "foreground": "var(cyan)"
+      "foreground": "var(purple)"
     },
     {
       "name": "MARKUP - Lists",
@@ -265,9 +266,9 @@
     },
     {
       "name": "MARKUP - Underline Link",
-      "scope": "markup.underline.link",
+      "scope": "markup.underline.link,punctuation.separator.path.markdown",
       "font_style": "italic underline",
-      "foreground": "var(red)"
+      "foreground": "color(var(blue) alpha(0.9))"
     },
     {
       "name": "MARKUP - Deleted",
@@ -318,7 +319,7 @@
     {
       "name": "META - HTML and XML tags, including punctuation, names and attributes",
       "scope": "meta.tag",
-      "foreground": "var(foreground)"
+      "foreground": "var(red)"
     },
     {
       "name": "META - The complete contents of data structures",
@@ -377,7 +378,7 @@
     },
     {
       "name": "META - Sections of code delineated by square brackets",
-      "scope": "meta.brackets,punctuation.section.brackets.begin,punctuation.section.brackets.end,meta.array.literal,meta.brace.square",
+      "scope": "meta.brackets,punctuation.section.brackets.begin,punctuation.section.brackets.end,meta.array.literal,meta.brace.square,punctuation.section.access",
       "foreground": "color(var(white) alpha(0.75))"
     },
     {
@@ -443,7 +444,7 @@
     {
       "name": "PUNCTUATION - Member access, scope resolution, or similar constructs",
       "scope": "punctuation.accessor",
-      "foreground": "var(orange)"
+      "foreground": "color(var(white) alpha(0.75))"
     },
     {
       "name": "PUNCTUATION - Property list, such CSS in HTML",
@@ -588,7 +589,7 @@
     {
       "name": "VARIABLE - Fields, properties, members and attributes of a class",
       "scope": "variable.other.member",
-      "foreground": "var(yellow)"
+      "foreground": "color(var(white) alpha(0.75))"
     },
     {
       "name": "VARIABLE - Function and method name",
@@ -768,7 +769,7 @@
     {
       "name": "Unused variables",
       "scope": "variable.parameter.unused, variable.other.unused",
-      "foreground": "color(var(purple) alpha(0.8))",
+      "foreground": "color(var(white) alpha(0.5))",
       "font_style": "italic",
     },
     // {
@@ -810,6 +811,16 @@
       "scope": "source.elixir meta.doc.elixir markup.raw.block.markdown",
       "foreground": "var(comments)",
       "background": "color(var(comments) alpha(0.02))"
+    },
+    {
+      "name": "LSP - Warning",
+      "scope": "markup.warning.lsp",
+      "foreground": "color(var(yellow) alpha(0.7))",
+    },
+    {
+      "name": "LSP - Error",
+      "scope": "markup.error.lsp",
+      "foreground": "var(red)",
     },
     // {
     //   "name": "Unused variables",
