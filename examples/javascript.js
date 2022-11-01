@@ -63,7 +63,7 @@ try {
         })
     });
 
-} catch(e) {
+} catch (e) {
     console.warn(e);
     throw new CustomError('baz', 'bazMessage');
 }

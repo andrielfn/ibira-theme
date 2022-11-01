@@ -772,15 +772,9 @@
       "foreground": "color(var(white) alpha(0.5))",
       "font_style": "italic",
     },
-    // {
-    //   "name": "Unused variables",
-    //   "scope": "meta.doc.elixir string.quoted.triple.double.elixir",
-    //   "foreground": "#f00",
-    //   "font_style": "italic",
-    // },
     {
       "name": "ELIXIR - Multi line doc",
-      "scope": "source.elixir meta.doc.elixir meta.paragraph",
+      "scope": "meta.doc.elixir punctuation.definition.string.begin.elixir,meta.doc.elixir punctuation.definition.string.end.elixir,source.elixir meta.doc.elixir meta.paragraph,meta.doc.elixir string.quoted.triple.double.elixir",
       "foreground": "var(comments)",
       "font_style": "italic"
     },
