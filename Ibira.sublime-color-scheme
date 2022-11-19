@@ -774,7 +774,7 @@
     },
     {
       "name": "ELIXIR - Multi line doc",
-      "scope": "meta.doc.elixir punctuation.definition.string.begin.elixir,meta.doc.elixir punctuation.definition.string.end.elixir,source.elixir meta.doc.elixir meta.paragraph,meta.doc.elixir string.quoted.triple.double.elixir",
+      "scope": "meta.doc.elixir punctuation.definition.string.begin.elixir,meta.doc.elixir punctuation.definition.string.end.elixir,source.elixir meta.doc.elixir meta.paragraph,meta.doc.elixir string.quoted.triple.double.elixir,string.quoted.triple.single.elixir",
       "foreground": "var(comments)",
       "font_style": "italic"
     },
